@@ -1,0 +1,389 @@
+ <!doctype html>
+ <html>
+   <head>
+   <meta charset="utf-8">
+   <title>segunda aplicacion</title>
+
+    <!--grupo CSS--> 
+    <link rel="stylesheet" href="css/tema-app1.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>
+    <script src="phonegap.js"></script>
+    <script type="text/javascript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+   </head>
+
+ <body onLoad="MM_preloadImages('imagenes/tel2.jpg','imagenes/tel4.jpg','imagenes/tel6.jpg','imagenes/bell.PNG','imagenes/his2.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>TELEFONÍA CELULAR EN MÉXICO</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO CELULAR</h1>
+      <div>
+       <p>Esta es la imagen de un télefono celular:</p>
+       <br>
+     </div>
+     <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('telefono','','imagenes/tel2.jpg',1)"><img src="imagenes/tel1.png" name="telefono" width="299" height="312" id="telefono"></a></div>
+   </div>
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>DEFINICIÓN</h2>
+         <p>Definición de un teléfono celular</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h3>HISTORIA</h3>
+        <p>Historia de la telefonía celular</p>
+      </a>    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>CLASIFICACIÓN</h2>
+        <p>Clasificación de los teléfonos celulares</p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>COMPAÑÍAS</h2>
+        <p>Compañías que ofrecen el servicio de celular en México</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>TELÉFONOS DEL FUTURO </h2>
+         <P>Teléfonos del futuro</P>
+       </a>
+     </li>
+    </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+     <div>
+       <img src="res/android/mdpi.png" width="60" height="60">     </div>
+     <div>
+       <h4>Aplicación Dos </h4>
+       <h4>Tapia León Melina</h4>
+     </div>
+   </div>
+ </div>
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>DEFINICIÓN</h1>
+     </div>
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO CELULAR 1</h1>
+	 <br>
+      <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/tel4.jpg',1)"><img src="imagenes/tel3.jpg" alt="sustitucion" name="Image5" width="299" height="312" border="0"></a>       <br>
+     </div>
+     </div>
+	 
+	 <br>
+	 <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO CELULAR 2</h1>
+	 <br>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/tel6.jpg',1)"><img src="imagenes/tel5.jpg" alt="sustitucion" name="Image6" width="299" height="312" border="0"></a>      <br>
+     </div>
+     </div>
+	  <div data-role="content" align="justify" >
+       <div>
+          <p>El teléfono celular es un dispositivo inalámbrico electrónico para acceder y utilizar los servicios de las redes de telefonía celular y así poder comunicarse mediante llamadas de voz, mensajes de texto, acceder a Internet y otros servicios, el rasgo diferencial del teléfono celular por sobre los otros tipos de teléfono es su fácil portación. Nacieron con el claro objeto de mantener comunicada a la gente por la voz.</p>
+		  <P>Se denomina celular en la mayoría de países latinoamericanos debido a que el servicio funciona mediante una red de celdas, donde cada antena repetidora de señal es una célula. </p>
+		  <p>Los teléfonos celulares son usados para una variedad de propósitos, tales como mantener el contacto con miembros de la familia, conducir negocios, y con el fin de tener acceso a un teléfono en el caso de una emergencia. Algunas personas llevan más de un teléfono celular para diferentes propósitos, tales como para uso comercial y personal.</p>
+	 
+       </div>
+     </div>
+	 
+	
+	 </div>
+	 
+     <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicación Dos, MTL</h4>
+     </div>
+   </div>
+  </div>
+  
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>HISTORIA</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO CELULAR HISTORIA 1</h1>
+	 <br>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/bell.PNG',1)"><img src="imagenes/alex.jpg" alt="sustitucion" name="Image10" width="299" height="312" border="0"></a>      <br>
+     </div>
+     </div>
+	 
+	 <br>
+	 <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO CELULAR HISTORIA 2</h1>
+	 <br>
+      <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/his2.jpg',1)"><img src="imagenes/his1.jpg" alt="sustitucion" name="Image11" width="299" height="312" border="0"></a>  <br>
+     </div>
+     </div>
+	  <div data-role="content" align="justify" >
+       <div>
+          <p>Históricamente la invención del teléfono se le atribuye al escocés-norteamericano Alexander Graham Bell y la creción de su Sistema de teléfono llamada "BELL SYSTEM".</p>
+		  <P>Una de las grandes desventajas de los antiguos teléfonos era la dependencia del usuario con las operadoras en la centrales. En aquellos años era imposible comunicarse directamente como lo hacemos ahora, por lo que se empezaron a desarrollar los teléfonos celulares. Para la máxima comodidad del usuario fueron desarrollandose infinidad de versiones de aparatos telefónicos inalámbricos.</p>
+		  <p>La gran idea del sistema celular es la división de la ciudad en pequeñas células o celdas, esta idea permite la re-utilización de frecuencias a través de la ciudad, con lo que miles de personas pueden usar los teléfonos al mismo tiempo.</p>
+	 
+       </div>
+     </div>
+	 
+	 
+	 
+	 
+	 </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicación Dos, MTL</h4>
+      </div>
+ </div>
+     </div>
+     
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>CLASIFICACIÓN</h1>
+       </div>
+      <div data-role="main" class="ui-content">
+	   <div data-role="content" align="justify" >
+       <div>
+         <h1>GAMA ALTA</h1>
+		 <p>En esta gama están todos los smartphones con los elementos má evolucionados y de innovaciones únicas.</p>
+       </div>
+     </div>
+	 </div>
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>EJEMPLO</h1>
+	 <br>
+      <div>
+       <img src="imagenes/gamaalta.jpg" width="299" height="312">     <br>
+     </div>
+	 <p>Moto Z Play</p>
+     </div>
+	 </div>
+	 
+	 
+	 <div data-role="main" class="ui-content">
+	   <div data-role="content" align="justify" >
+       <div>
+           <h1>GAMA MEDIA</h1>
+		<p>Los smartphones de esta gama se caracterízan de ser de calidad pero de versiones atrasadas a las actuales. Aquí se ubican los celulares que fueron de gama alta pero que han sido rezagados por las nuevas tecnologías.</p>
+       </div>
+     </div>
+	 </div>
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>EJEMPLO</h1>
+	 <br>
+      <div>
+        <img src="imagenes/xiaomi.png" width="299" height="312">     <br>
+     </div>
+	 <p>Xiaomi Redmi 4pro</p>
+     </div>
+	 </div>
+	 
+	  <div data-role="main" class="ui-content">
+	   <div data-role="content" align="justify" >
+       <div>
+           <h1>GAMA BAJA</h1>
+		<p>Son los celulares inteligentes pero que no dan las mismaas utilidades que uno de gama alta, su funcionalidad va más allá de llamar y recibir llamadas pero no alcanzaq los nuevos avances tecnológicos.</p>
+       </div>
+     </div>
+	 </div>
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>EJEMPLO</h1>
+	 <br>
+      <div>
+        <img src="imagenes/gamabaja.jpg" width="299" height="312">     <br>
+     </div>
+	 <p>Samsung Galaxy Fame</p>
+     </div>
+	 </div>
+	 
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Dos, MTL</h4>
+        </div>
+ </div>
+       </div>
+       
+       <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>COMPAÑÍAS</h1>
+         </div>
+     
+          <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELCEL</h1>
+	 <br>
+      <div>
+       <img src="imagenes/telcel.jpg" width="274" height="163" >    <br>
+     </div>
+	 <a href="http://www.telcel.com//">http://www.telcel.com/</a>
+     </div>
+	 </div>
+      
+	  
+	<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>MOVISTAR</h1>
+	 <br>
+      <div>
+      <img src="imagenes/movistar.jpg" width="274" height="163" >    <br>
+     </div>
+	  <a href="https://www.movistar.com.mx/">https://www.movistar.com.mx/</a>
+     </div>
+	 </div>
+	  
+	 
+	 <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>UNEFON</h1>
+	 <br>
+      <div>
+     <img src="imagenes/unefon.png" width="274" height="163" >   <br>
+     </div>
+	 <a href="https://www.unefon.com.mx/">https://www.unefon.com.mx/</a>
+     </div>
+	 </div>
+	 
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>IUSACELL</h1>
+	 <br>
+      <div>
+        <img src="imagenes/iusa.jpg" width="274" height="163" >   <br>
+     </div>
+	   <a href="https://www.att.com.mx/">https://www.att.com.mx/</a>
+     </div>
+	 </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+	 
+       <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Dos, MTL</h4>
+       </div>
+       </div>
+       </div>
+       
+      <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>TELÉFONOS DEL FUTURO </h1>
+       </div>
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO 1</h1>
+	 <br>
+      <div>
+      <img src="imagenes/ara.jpeg" width="299" height="312">   <br>
+     </div>
+	 <p>Teléfonos celulares modulares del proyecto APA</p>
+     </div>
+	 </div>
+      
+	  
+	<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO 2</h1>
+	 <br>
+      <div>
+      <img src="imagenes/shoe.jpg" width="299" height="312">   <br>
+     </div>
+	 <p>Talking shoe</p>
+     </div>
+	 </div>
+	  
+	 
+	 <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO 3</h1>
+	 <br>
+      <div>
+      <img src="imagenes/calico.jpg" width="299" height="312">   <br>
+     </div>
+	 <p>Proyecto Calico</p>
+	 <p>Relacionado con la salud.</p>
+     </div>
+	 </div>
+	 
+	  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>TELÉFONO 4</h1>
+	 <br>
+      <div>
+      <img src="imagenes/fi.jpg" width="299" height="312">   <br>
+     </div>
+	 <p>Proyecto Fi</p>
+	 <p>Operadora de telefonía en la nube.</p>
+     </div>
+	 </div>
+	 
+       <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Aplicación Dos, MTL</h4>
+       </div>
+     </div>
+   </div>
+       
+            
+</body>
+ </html>
+ 
