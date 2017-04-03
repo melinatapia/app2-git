@@ -8,7 +8,7 @@
   <name>app2 TELEFONIA CELULAR EN MEXICO</name>
   
    <description>
-    Aplicacion que muestra informacion sobre la telefonia celular
+    Aplicación que muestra información sobre la telefonía celular
    </description>
    
    <author href="https://build.phonegap.com" email="tapia.melina.29@gmail.com">
@@ -32,7 +32,12 @@
  
  <!--<plugin name="cordova-plugin-geolocation" source="npm" />-->
   <!--Third part plugins-->
-  
+  <!-- Para accesar a paginas em internet-->
+  <allow-intent href="https://*/*"/>
+  <acces origin="https://*/*"/>
+  <allow-intent href="http://*/*"/>
+  <acces origin="http://*/*"/>
+  <plugin name="cordava-plugin-whitelist" source="npm"/>
   <!--Colocar icono app-->
   
   <icon src="res/android/mdpi.png"/>
